@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page Two</title>
+    <link rel="stylesheet" href="style.css" style="text/css">
+</head>
+<body>
+
+
+<form id="surveyForm" onsubmit="ExampleJS()">
+    <div id="surveyMainDiv" class="container">
+
+        <h1 id="mainHeader">Programming Survey</h1>
+        <p>Why are you learning to code?</p>
+
+        <label for="name" id="nameLabel">Name?</label>
+        <input type="text" name="name" id="name" class="input-style">
+    
+        <label for="email" id="emailLabel">Email?</label>
+        <input type="email" name="email" id="email" class="input-style">
+    
+        <label for="yearsCoding" id="yearsLabel">How many years have you been coding?</label>
+        <input type="number" id="num" placeholder="between 0-100" min="0" class="input-style">
+    
+        <label for="skillLevel" id="skillLabel">How would you describe your current ability?</label>
+        <select id="skillLevel" name="skillLevel" class="input-style">
+            <option disabled selected value="">Select your skill level</option>
+            <option value="None">None</option>
+            <option value="Rookie">Rookie</option>
+            <option value="Getting there">Getting there</option>
+            <option value="GOD">Basically a god of code</option>
+        </select>
+    
+
+        <label for="textbox" id="textboxLabel">How did you get into coding? (Optional)</label>
+        <textarea name="textbox" id="textbox" placeholder="Enter your story here..."></textarea>
+
+        <div class="submitDiv">
+            <input type="submit" class ="submitButton" name="submit" value="Submit">
+        </div>
+    </div>
+    
+</form>
+
+
+<script src="script.js"></script>
+</body>
+</html>
